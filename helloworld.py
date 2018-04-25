@@ -5,7 +5,7 @@ def helloworld(Name):
     print "hello world! "  + Name * 3
 
 def circlearea(r):
-    return pi * r ** 2
+    return pi * int(r) ** 2
 
 
 if __name__ == "__main__":
@@ -13,4 +13,4 @@ if __name__ == "__main__":
     helloworld(name)
 
     r = raw_input('please input the radio length:')
-    circlearea(r)
+    print circlearea(r)
