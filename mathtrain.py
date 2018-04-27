@@ -5,5 +5,3 @@ def printmutitable():
         for j in range(1,i+1):
             print('{} X {} = {}'.format(j,i,i*j),end="\t")
         print('')
-
-def
