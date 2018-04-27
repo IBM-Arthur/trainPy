@@ -12,8 +12,16 @@ def circlearea(r):
     '''Caculate area for circle'''
     return (pi * int(r) ** 2)
 
+def same_number(begin=80,end=74):
+    if begin < end:
+        begin , end = end, begin
+    n = 0
+    while begin - n != end + n:
+        if n > 1000000:
+            return None
+        n += 1
+    return n
+
+
 if __name__ == '__main__':
-    printmutitable()
-    r = input('please input the radio length:')
-    print (circlearea(r))
-    print(circlearea.__doc__)
+    print(same_number(57,73))
