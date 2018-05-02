@@ -1,0 +1,5 @@
+ # For Database: #
+- Stream: IM_Artifactory
+  Component: DSS_FDW
+  Path:
+   - Database/SAAS/saas1.dp_proc_saas_signings_fms.sp.sql
