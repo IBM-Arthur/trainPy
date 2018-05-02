@@ -15,13 +15,8 @@ def circlearea(r):
 def same_number(begin=80,end=74):
     if begin < end:
         begin , end = end, begin
-    n = 0
-    while begin - n != end + n:
-        if n > 1000000:
-            return None
-        n += 1
-    return n
+    return (begin - end) / 2
 
 
 if __name__ == '__main__':
-    print(same_number(57,7))
+    print(same_number(1433235234,123123123))
