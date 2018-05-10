@@ -19,4 +19,5 @@ def same_number(begin=80,end=74):
 
 
 if __name__ == '__main__':
-    print(same_number(1433235234,123123123))
+    # print(same_number(1433235234,123123123))
+    printmutitable()
