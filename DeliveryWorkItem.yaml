@@ -1,0 +1,6 @@
+- Branch: master
+  Organization: DSW-IM-AND-ESB
+  Repository: DSS
+- SQLCommand:
+  - values current time
+  - select tabname from syscat.tables where tabname like 'IBMSNAP%' and created = current date - 1 fetch first 10 rows only @

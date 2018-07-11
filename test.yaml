@@ -1,12 +1,8 @@
- # For Database: #
-- Stream: IM_Artifactory
-  Component: DSS_FDW
-  Path:
-   - Database/SAAS/saas1.dp_proc_saas_signings_fms.sp.sql
-- Stream: IM_Artifactory
-  Component: DSS_FDW
-  Path:
-   - Database/SAAS/saas1.dp_proc_saas_signings_fms.sp.sql
-   - Database/SAAS/saas1.dp_proc_saas_signings_fms1.sp.sql
-   - Database/SAAS/saas1.dp_proc_saas_signings_fms2.sp.sql
-   - Database/SAAS/saas1.dp_proc_saas_signings_fms3.sp.sql
+- Organization: DSW-IM-AND-ESB
+  Repository: DSS
+  Branch: master
+- SQLCommand:
+   - values current time
+   - select tabname from syscat.tables
+        where tabname like 'IBMSNAP%' and created = current date - 1
+         fetch first 10 rows only @

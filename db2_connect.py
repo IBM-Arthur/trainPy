@@ -1,7 +1,7 @@
 import ibm_db,getpass
 
-# password = getpass.getpass("Password:")
-password = ''
+password = getpass.getpass("Password:")
+# password = ''
 
 connstr = r'DATABASE=ODS;HOSTNAME=commander.rtp.dst.ibm.com;PORT=61010;PROTOCOL=TCPIP;UID=baiyx;PWD=' + password + r';SECURITY=SSL;SSLCLIENTKEYSTOREDB=C:\Work\DBA\DB2\SSL\kdb\mydbclient.kdb;SSLCLIENTKEYSTASH=C:\Work\DBA\DB2\SSL\kdb\mydbclient.sth;'
 conn = ibm_db.connect(connstr, "", "")
